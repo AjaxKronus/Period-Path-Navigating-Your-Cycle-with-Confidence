@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Group 5">
+  <meta name="description"
+    content="Empowering Menstrual Health Tracking: an inclusive, free web application to help people understand and track their periods. This site will allow users to utilize advanced tracking features, personalized insights, and professional advice without the burden of a subscription.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="icon" type="image/png" href="img/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Project Draft</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <nav class="mobile-nav">
+    <div class="left-nav">
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="right-nav">
+      <a href="reminders.html" class="logout">Log out</a>
+    </div>
+  </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="dashboard.html">Logs</a></li>
+      <li><a href="reading.html">Stats</a></li>
+      <div class="right">
+        <li><a href="reminders.html">Log out</a></li>
+        <li><a href="reminders.html">About us</a></li>
+      </div>
+    </ul>
+  </nav>
+
+
+  <section class="predictions">
+    <div class="predictions-container">
+      <h3>Day two of period</h3>
+      <p>Did your period end today?</p>
+    </div>
+  </section>
+
+  <section class="container">
+
+    <!-- for mobile screens-->
+    <div class="calendar-mobile">
+      <img src="img/calendar-icon.png" alt="calendar icon">
+      <div class="week-view">
+        <table cellspacing="15px" cellpadding="15" class="mobile-table">
+          <thead>
+            <tr>
+              <th>s</th>
+              <th>m</th>
+              <th>t</th>
+              <th>w</th>
+              <th>t</th>
+              <th>f</th>
+              <th>s</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td class="today">20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <!-- for medium and large screens -->
+    <div class="calendar">
+      <h3>April 2024</h3>
+      <table cellspacing="20px" cellpadding="20">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td class="today">20</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+          </tr>
+          <tr class="next-month">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sidebar">
+      <section class="reminder">
+        <header>
+          <h3>Reminders</h3>
+        </header>
+        <div class="info-shape">
+          <div class="reminders">
+            <p><input type="checkbox"> take birth control</p>
+            <p><input type="checkbox"> buy more pads</p>
+            <p><input type="checkbox"> drink more pads</p>
+            <button type="button"><i class="fas fa-plus"></i>Add a reminder</button>
+          </div>
+        </div>
+      </section>
+      <section class="tip">
+        <header>
+          <h3>Tips</h3>
+        </header>
+        <div class="info-shape">
+          <div class="tips">
+            <p><span class="star">&#9733;</span><a
+                href="https://www.calm.com/blog/anxiety-before-period#:~:text=PMS%20anxiety%20typically%20begins%20in,subsides%20once%20your%20period%20starts."
+                target="_blank">How to handle period anxiety</a></p>
+            <p><span class="star">&#9733;</span><a href="https://www.healthline.com/health/period-cravings#chocolate"
+                target="_blank">this article about
+                period cravings</a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="mood_check">
+    <header>
+      <h3>How are you feeling today?</h3>
+    </header>
+    <div class="mood_top">
+      <img src="img/a_emoji1.png" alt="happy face">
+      <img src="img/a_emoji2.png" alt="side eye face">
+      <img src="img/a_emoji3.png" alt="sobbing face">
+    </div>
+    <div class="mood_bottom">
+      <img src="img/a_emoji4.png" alt="angry face">
+      <img src="img/a_emoji5.png" alt="happy face">
+      <img src="img/a_emoji6.png" alt="side eye face">
+    </div>
+  </section>
+
+  <footer>
+    <p>Group Members: Anjali Schatzer, Yusra Abdullahi, Hiba Abbas, Amartya Chaube</p>
+    <p>&copy; 2024</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Group 5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/project.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="icon" type="image/png" href="img/icon.png">
+
+  <title>Logs</title>
+  <style>
+    /* Additional CSS for media queries */
+
+    body {
+      font-family: 'Inria Serif', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      background-color: #f0d9da;
+      color: white;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logs_container {
+      margin: 20px;
+    }
+
+    .logs_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .log-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .log-grid img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+
+    footer {
+      background-color: #f0d9da;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Media Queries */
+
+    @media only screen and (min-width: 769px) {
+      .logs_container {
+        width: 70%;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="mobile-nav">
+    <div class="left-nav">
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="right-nav">
+      <a href="reminders.html" class="logout">Log out</a>
+    </div>
+  </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="dashboard.html">Logs</a></li>
+      <li><a href="reading.html">Stats</a></li>
+      <div class="right">
+        <li><a href="reminders.html">Log out</a></li>
+        <li><a href="reminders.html">About us</a></li>
+      </div>
+    </ul>
+  </nav>
+
+
+  <section class="logs_container">
+    <div class="logs_header">
+      <p>Logs</p>
+      <p>Filter</p>
+    </div>
+    <div class="log-grid">
+      <img src="img/addLog.png" alt="create Log button">
+    </div>
+  </section>
+
+  <footer>
+    <p>Group Members: Anjali Schatzer, Yusra Abdullahi, Hiba Abbas, Amartya Chaube</p>
+    <p>&copy; 2024</p>
+  </footer>
+
+</body>
+
+</html>
